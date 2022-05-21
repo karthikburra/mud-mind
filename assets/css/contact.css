@@ -1,0 +1,341 @@
+ul.social-icons li {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+ul.social-icons li:last-child {
+  margin-right: 0px;
+}
+
+ul.social-icons li a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  background-color: #eee;
+  color: #121212;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+ul.social-icons li a:hover {
+  background-color: #f33f3f;
+  color: #fff;
+}
+
+a.filled-button {
+  background-color: #f33f3f;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+a.filled-button:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+.page-heading {
+  padding: 210px 0px 130px 0px;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-heading .text-content h4 {
+  color: #f33f3f;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.page-heading .text-content h2 {
+  color: #fff;
+  font-size: 62px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#preloader {
+  overflow: hidden;
+  background: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Send Message */
+
+.send-message {
+  margin-top: 100px;
+}
+
+.contact-form input {
+  font-size: 14px;
+  width: 100%;
+  height: 44px;
+  display: inline-block;
+  line-height: 42px;
+  border: 1px solid #eee;
+  border-radius: 0px;
+  margin-bottom: 30px;
+}
+
+.contact-form input:focus {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.contact-form textarea {
+  font-size: 14px;
+  width: 100%;
+  min-width: 100%;
+  min-height: 120px;
+  height: 120px;
+  max-height: 180px;
+  border: 1px solid #eee;
+  border-radius: 0px;
+  margin-bottom: 30px;
+}
+
+.contact-form textarea:focus {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.contact-form button.filled-button {
+  background-color: #f33f3f;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .form-popup {
+    display: none;
+    position: relative;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    background-color: white;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-brand {
+    width: auto;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  .navbar:after {
+    display: none;
+  }
+  #navbarResponsive {
+    z-index: 99999;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 90%;
+    text-align: left;
+    background-color: #fff !important;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  .navbar .navbar-nav a.nav-link {
+    padding: 15px 0px;
+    color: grey !important;
+  }
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .active > .nav-link,
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link.show,
+  .navbar .navbar-nav .show > .nav-link {
+    color: black !important;
+    border-bottom: none !important;
+    padding-bottom: 15px;
+  }
+  .product-item .down-content h4 {
+    margin-bottom: 10px;
+  }
+  .product-item .down-content h6 {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+  }
+  .product-item .down-content span {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.googlemaps {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+#contactform {
+  position: relative;
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  margin: 60px auto 0;
+  padding: 3px;
+  background: white;
+  height: auto;
+  color: black;
+  top: 300px;
+  width: 85%;
+  padding: 15px;
+}
+.col1 {
+  width: 48%;
+  padding: 25px;
+  float: left;
+  margin: 10px auto 0;
+}
+.col2 {
+  width: 48%;
+  padding: 25px;
+  float: right;
+  margin: 10px auto 0;
+}
+@media only screen and (max-width: 780px) {
+  .col1 {
+    width: 100%;
+    padding: 25px;
+    margin: 10px auto 0;
+    margin-bottom: 10px;
+  }
+
+  .col2 {
+    width: 100%;
+    padding: 25px;
+    margin: 10px auto 0;
+  }
+}
+.img1 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.img2 {
+  margin-right: 50px;
+}
+.btn1 {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.vertical {
+  border-left: 1px solid grey;
+  height: auto;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+  background-color: white;
+  width: 500px;
+  padding: 20px;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 20%;
+}
